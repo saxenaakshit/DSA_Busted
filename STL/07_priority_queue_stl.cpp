@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     priority_queue <int> maxi;//max by default
     priority_queue<int,vector<int>,greater<int>> mini;//mini vala priority queue
-
+    //based on heap
     maxi.push(8);
     maxi.push(3);
     maxi.push(2);
