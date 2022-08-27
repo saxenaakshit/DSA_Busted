@@ -15,6 +15,6 @@ int main(){
     }
     cout<<"is empty? "<<m.empty();
 
-
+//m.erase(m.begin())
 return 0;
 }
