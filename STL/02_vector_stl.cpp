@@ -19,7 +19,7 @@ int main(){
     } 
     cout<<endl;
 
-    cpp.push_back(1);///
+    cpp.push_back(1);///hemlo
     cpp.push_back(2);
     cpp.push_back(3);
     cpp.push_back(5);
