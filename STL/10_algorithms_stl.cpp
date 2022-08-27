@@ -14,6 +14,7 @@ int main(){
        3. rotate
        4.reverse
        5.upper&lower bound
+       6.max_min
        */
     
     string s="ahtsa";
