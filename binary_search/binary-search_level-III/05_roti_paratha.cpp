@@ -3,43 +3,46 @@
 using namespace std;
 
 bool isposs(int arr[],int n,int num,int mid){
-     int sum=0;
+     int count=0;int time=0;
     for(int i=0;i<n;i++){
-        int count=0;
-        int k=1;
+        
        
-        int time=mid;
-        while(time>0){
-            time=time-k*arr[i];
-        if (time >= 0)
+        int time=arr[i];
+        int j=2;
+        while(time<=mid){
+            count++;
+            time=time+(arr[i]*j);
+            j++;
+        }
+        if (count>=num)
             {
-                count++;
-                k++;
+               return 1;
             }
         }
-        sum += count;
+        return 0;
         //cout << count << endl;
     }
     //cout << "parathas made " << sum << endl;
-    if (sum < num)
-        return false;
-    return true;
-        }
+    
     
 
 int main() {
+    int test;
+    cin>>test;
+    for(int i=0;i<test;i++){
     int num;
 	
 	int n;
 
-	cin>>n>>num;
+	cin>>num;
+    cin>>n;
 	
 	int *arr=new int[n];
 	for(int i=0;i<n;i++){
 		cin>>arr[i];
 	}
 	
-	int e=*min_element (arr, arr+n)*(num*(num+1))/2;
+	int e=arr[n-1]*(num*num+1)/2;
 	
 	int s=0;
 	int ans=-1;
@@ -56,4 +59,5 @@ int main() {
 	cout<<ans;
 	// your code goes here
 	return 0;
+    }
 }
