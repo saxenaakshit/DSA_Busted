@@ -6,10 +6,12 @@ void count(int n){
     if(n==0){
         return;
     }
-    //processing
-    cout<<n<<endl;
-    //recursive call->tail recursion
+   
+    //recursive call->head recursion
     count(n-1);
+     
+     //processing
+     cout<<n<<endl;
    
 
 
